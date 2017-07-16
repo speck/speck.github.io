@@ -1,0 +1,245 @@
+@import url('/css/reset.css');
+@import url('/css/base.css');
+
+a {
+  border-bottom: 1px solid rgb(192, 192, 192);
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  border: 0;
+  color: rgb(255, 102, 0);
+}
+
+a:hover svg {
+  fill: rgb(255, 102, 0);
+}
+
+article {
+  border-top: 1px solid rgb(243, 243, 243);
+  padding: 1em 0;
+}
+
+h2 {
+  color: rgb(128, 128, 128);
+  margin: .25em 0 .5em;
+}
+
+header {
+  background-color: rgb(249, 249, 249);
+  border-bottom: 1px solid rgb(239, 239, 239);
+  padding: 2em 20px 1em;
+}
+
+header a {
+  border: 0;
+}
+
+header svg {
+  width: 2em;
+}
+
+header ul {
+  color: rgb(192, 192, 192);
+  line-height: 44px;
+  list-style: none;
+  margin: 0;
+}
+
+main h1 {
+  font-size: 1.4em;
+}
+
+main h2,
+main article h1 {
+  font-size: 1.2em;
+}
+
+main article h2 {
+  font-size: 1em;
+  margin-top: 2em;
+}
+
+main article h1 + h2 {
+  margin-top: 0;
+}
+
+section {
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding: 2em 20px 1em;
+}
+
+section h1 {
+  padding-bottom: 1em;
+}
+
+svg {
+  fill: rgb(192, 192, 192);
+  margin-right: .25em;
+  position: relative; /* Arg. */
+  top: -.1em;
+}
+
+.details {
+  color: rgb(128, 128, 128);
+  fill: rgb(128, 128, 128);
+  margin-bottom: 1em;
+}
+
+.details > span {
+  display: block;
+  font-size: .9em;
+}
+
+.timeline svg {
+  left: .1em; /* Aaarg. */
+}
+
+#echosign h2         { color: rgb(0, 145, 190) }
+#recruitmilitary h2  { color: rgb(214, 1, 31) }
+#roadtrippers h2     { color: rgb(75, 191, 187) }
+#speck-industries h2 { color: rgb(255, 102, 0) }
+#sfsu h2             { color: rgb(67, 66, 138) }
+
+/* ----- 768 ---------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+
+  article {
+    padding: 2em 0 1em;
+  }
+
+  header {
+    padding: 4em 100px 3em;
+  }
+
+  header ul,
+  .details {
+    display: flex;
+  }
+
+  header li + li,
+  .details span + span {
+    margin-left: 1em;
+  }
+
+  header svg,
+  .details svg {
+    width: 1em;
+  }
+
+  h1 {
+    margin-bottom: .25em;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  main {
+    padding: 2em 0;
+  }
+
+  main h1 {
+    font-size: 1.6em;
+  }
+
+  main h2,
+  main article h1 {
+    font-size: 1.4em;
+  }
+
+  main article h2 {
+    font-size: 1.2em;
+  }
+
+  ol,
+  ul {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  section {
+    padding: 2em 100px 1em;
+  }
+
+  section:last-child {
+    border: 0;
+    padding-bottom: 2em;
+  }
+}
+
+/* ----- 1000 --------------------------------------------------------------- */
+
+@media only screen and (min-width: 1000px) {
+
+  a[href^='tel'] svg {
+    left: .05em; /* Aaaaarg. */
+  }
+
+  article h2 {
+    margin-bottom: 0;
+  }
+
+  header {
+    background-color: transparent;
+    border: 0;
+    left: 3em;
+    padding: 0;
+    position: fixed;
+    top: 3em;
+    width: 22em;
+  }
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  header h1 a,
+  header a span {
+    border-bottom: 1px solid rgb(192, 192, 192);
+  }
+
+  header h1 a {
+    font-weight: 800;
+  }
+
+  header a:hover span {
+    border-bottom: 0;
+  }
+
+  header li + li {
+    margin: 0;
+  }
+
+  header ul {
+    display: initial;
+    line-height: 2em;
+    position: relative;
+    top: 10px;
+  }
+
+  main {
+    margin: 3em 3em 3em 27em;
+    padding: 0;
+    max-width: 40em;
+  }
+
+  main h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  section:first-child {
+    padding-top: 0;
+  }
+
+  section h1 {
+    padding-bottom: 0;
+  }
+}
