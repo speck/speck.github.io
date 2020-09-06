@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>A Randomizer for The New York Times Crossword Puzzle</title>
+    <script type='text/javascript'>
+      const s = new Date(1994, 8, 1)
+      const r = new Date(s.getTime() + Math.random() * (new Date().getTime() - s.getTime()))
+      const y = r.getFullYear()
+      const m = ('0' + (r.getUTCMonth() + 1)).slice(-2)
+      const d = ('0' + r.getUTCDate()).slice(-2)
+      window.location = `https://www.nytimes.com/crosswords/game/daily/${y}/${m}/${d}`
+    </script>
+  </head>
+  <body></body>
+</html>
