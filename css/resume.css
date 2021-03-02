@@ -12,11 +12,11 @@ a {
 
 a:hover {
   border: 0;
-  color: rgb(255, 102, 0);
+  color: rgb(84, 37, 124);
 }
 
 a:hover svg {
-  fill: rgb(255, 102, 0);
+  fill: rgb(84, 37, 124);
 }
 
 article {
@@ -99,12 +99,34 @@ svg {
   left: .1em; /* Aaarg. */
 }
 
-#echosign h2         { color: rgb(0, 145, 190) }
-#geocaching h2       { color: rgb(2, 135, 77) }
-#recruitmilitary h2  { color: rgb(214, 1, 31) }
-#roadtrippers h2     { color: rgb(75, 191, 187) }
-#speck-industries h2 { color: rgb(255, 102, 0) }
-#sfsu h2             { color: rgb(67, 66, 138) }
+#echosign h1 a:hover,
+#echosign h2 {
+  color: rgb(0, 145, 190);
+}
+
+#geocaching h1 a:hover,
+#geocaching h2 {
+  color: rgb(2, 135, 77);
+}
+
+#recruitmilitary h1 a:hover,
+#recruitmilitary h2 {
+  color: rgb(214, 1, 31);
+}
+
+#roadtrippers h1 a:hover,
+#roadtrippers h2 {
+  color: rgb(75, 191, 187);
+}
+
+#speck-industries h1 a:hover,
+#speck-industries h2 {
+  color: rgb(255, 102, 0);
+}
+
+#sfsu h2 {
+  color: rgb(67, 66, 138);
+}
 
 /* ----- 768 ---------------------------------------------------------------- */
 
@@ -225,7 +247,7 @@ svg {
   }
 
   main {
-    margin: 4.25em 3em 3em 27em;
+    margin: 3em 3em 3em 27em;
     padding: 0;
     max-width: 40em;
   }
