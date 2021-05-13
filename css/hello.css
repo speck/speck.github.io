@@ -17,7 +17,7 @@ body {
 
 a {
   color: rgba(255, 255, 255, .75);
-  transition: color .4s ease-in;
+  transition: color .2s ease-in;
 }
 
 a:hover {
