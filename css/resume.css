@@ -104,6 +104,11 @@ svg {
   color: rgb(0, 145, 190);
 }
 
+#evernorth h1 a:hover,
+#evernorth h2 {
+  color: rgb(38, 98, 101);
+}
+
 #geocaching h1 a:hover,
 #geocaching h2 {
   color: rgb(2, 135, 77);
